@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="6dp"
+    android:background="@drawable/bg_card_item"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:paddingStart="12dp"
+    android:paddingTop="12dp"
+    android:paddingEnd="12dp"
+    android:paddingBottom="12dp">
+
+    <!-- Kotak putih pembungkus bendera -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/flagContainer"
+        android:layout_width="72dp"
+        android:layout_height="44dp"
+        android:background="@drawable/bg_flag_placeholder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgFlag"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:contentDescription="@string/desc_flag"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/bg_flag_placeholder" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvCountryName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/ivArrow"
+        app:layout_constraintStart_toEndOf="@id/flagContainer"
+        app:layout_constraintTop_toTopOf="@id/flagContainer"
+        tools:text="Afghanistan" />
+
+    <TextView
+        android:id="@+id/tvIso2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/gray_light"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@id/tvCountryName"
+        app:layout_constraintStart_toStartOf="@id/tvCountryName"
+        app:layout_constraintTop_toBottomOf="@id/tvCountryName"
+        tools:text="iso2 = AF" />
+
+    <TextView
+        android:id="@+id/tvIso3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:textColor="@color/gray_light"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@id/tvCountryName"
+        app:layout_constraintStart_toStartOf="@id/tvCountryName"
+        app:layout_constraintTop_toBottomOf="@id/tvIso2"
+        tools:text="iso3 = AFG" />
+
+    <ImageView
+        android:id="@+id/ivArrow"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="@string/desc_detail"
+        android:src="@drawable/ic_arrow_forward"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/green_primary" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">APIflags</string>
+    <string name="emoji_globe">\uD83C\uDF0D</string>
+    <string name="explore">Explore\nthe World</string>
+    <string name="search_hint">Search the World</string>
+    <string name="back_home">Kembali ke Menu Home</string>
+    <string name="empty_result">Negara tidak ditemukan</string>
+    <string name="error_load">Gagal memuat data: %1$s</string>
+    <string name="format_iso2">iso2 = %1$s</string>
+    <string name="format_iso3">iso3 = %1$s</string>
+    <string name="label_iso2">ISO-2</string>
+    <string name="label_iso3">ISO-3</string>
+    <string name="label_initial">Huruf Awal</string>
+    <string name="desc_flag">Bendera negara</string>
+    <string name="desc_detail">Lihat detail</string>
+</resources>
